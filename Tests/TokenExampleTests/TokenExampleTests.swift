@@ -5,8 +5,9 @@ final class TokenExampleTests: XCTestCase {
     
     func testCell() {
         let cell = CustomTokenAttachmentCell()!
+        var description = String()
         
-        let description = String(describing: dump(cell))
+        dump(cell, to: &description)
         
         XCTAssertTrue(description.contains("super: NSTokenAttachmentCell"))
         XCTAssertTrue(description.contains("super: NSTextAttachmentCell"))
