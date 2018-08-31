@@ -13,7 +13,7 @@ final class TokenExampleTests: XCTestCase {
         XCTAssertTrue(description.contains("super: NSTextAttachmentCell"))
         XCTAssertTrue(description.contains("super: NSCell"))
         XCTAssertTrue(description.contains("super: NSObject"))
-        
+        print("Success: \(description)")
     }
 
 
